@@ -120,7 +120,6 @@
 }
 
 /* Header notification */
-
 .header__notify {
   position: absolute;
   top: 150%;
@@ -171,33 +170,38 @@
 
 .header__notify-img {
   width: 50px; 
-  /* object-fit: contain; */
+  object-fit: contain;
 }
 
 .header__notify-info {
   margin-left: 12px;
+
 }
 
 .header__notify-name {
   display: block;
   font-size: 1.4rem;
-  color: var(--black-color);
+  color: var(--text-color);
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .header__notify-description {
   display: block;
   font-size: 1.2rem;
-  line-height: 3rem;
+  line-height: 1.6rem;
   color: #756F6E;
 }
 
 .header__notify-footer {
-  text-align: center;
+  /* display: flex; */
 }
 
 .header__notify-footer-btn {
   text-decoration: none;
   color: var(--text-color);
-  padding: 20px 20px;
+  padding: 15px 50px;
+  width: 100%;
+  text-align: center;
+  display: block;
 }
