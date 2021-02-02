@@ -1,5 +1,5 @@
 .header {
-  height: 120px;
+  height: var(--header-height);
   background-image: linear-gradient(0,#ff6333, #f6402e);
 }
 
@@ -11,6 +11,7 @@
 .header__navbar-list {
   list-style: none;
   padding-left: 0;
+  margin: 4px 0 0 0;
   
 }
 
@@ -135,6 +136,26 @@
   display: none;
 }
 
+.header__notify::before {
+  content: "";
+  border-style: solid;
+  border-width: 20px 30px;
+  border-color: transparent transparent var(--white-color) transparent;
+  position: absolute;
+  right: 12px;
+  top: -30px;
+}
+
+.header__notify::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  right: 0;
+  top: -20px;
+}
+
 @keyframes headerNotifyGrowth {
   from {
     opacity: 0;
@@ -221,4 +242,18 @@
   width: 100%;
   text-align: center;
   display: block;
+}
+
+/* Header with search */
+.header-with-search {
+  height: var(--header-with-search-height);
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header_logo-img {
+  width: 150px;
+  
 }
