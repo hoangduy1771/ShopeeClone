@@ -11,7 +11,7 @@
 .header__navbar-list {
   list-style: none;
   padding-left: 0;
-  margin: 4px 0 0 0;
+  margin: 10px 0 0 0;
   
 }
 
@@ -31,7 +31,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--white-color);
   text-decoration: none;
   font-weight: 400;
@@ -247,6 +247,8 @@
 /* Header with search */
 .header-with-search {
   height: var(--header-with-search-height);
+  display: flex;
+  align-items: center;
 }
 
 .header__logo {
@@ -257,3 +259,27 @@
   width: 150px;
   
 }
+
+.header_search {
+  background: var(--white-color);
+  height: 40px;
+  flex: 1;
+  border-radius: 2px;
+
+}
+
+.header_cart {
+  width: 150px;
+  text-align: center;
+}
+
+.header_cart-icon {
+  font-size: 2.3rem;
+  color: var(--white-color);
+
+}
+
+
+
+
+
