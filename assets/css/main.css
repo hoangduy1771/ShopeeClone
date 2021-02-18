@@ -87,7 +87,7 @@
   top: 150%;
   display: none;
   padding: 2px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .header__qr::before{
@@ -265,7 +265,7 @@
   background: var(--white-color);
   height: 40px;
   flex: 1;
-  border-radius: 2px;
+  border-radius: 3px;
   display: flex;
   align-items: center;
 
@@ -285,7 +285,7 @@
   font-size: 1.4rem;
   color: var(--text-color);
   padding: 0 16px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .header__cart {
@@ -320,6 +320,10 @@
   
 }
 
+.header__search-input:focus ~ .header__search-history {
+  display: block;
+}
+
 /* Search history */
 .header__search-history {
   position: absolute;
@@ -327,8 +331,10 @@
   left: 0;
   width: calc(100% - 16px);
   background-color: var(--white-color);
-  border-radius: 2px;
+  border-radius: 3px;
   box-shadow: 0 1px 5px #999;
+  display: none;
+  overflow: hidden;
 }
 .header__search-history-heading {
   margin: 15px 10px;
@@ -340,16 +346,24 @@
 .header__search-history-list {
   padding-left: 0;
   list-style: none;
+  margin-bottom: 0;
 }
+
 .header__search-history-item {
   height: 38px;
   padding: 0 10px;
+}
+
+.header__search-history-item:hover {
+  background-color: #e2d9d9;
 }
 
 .header__search-history-item a {
   text-decoration: none;
   font-size: 1.4rem;
   color: var(--text-color);
+  line-height: 38px;
+
 }
 
 
